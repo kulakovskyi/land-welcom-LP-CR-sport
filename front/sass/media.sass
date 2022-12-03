@@ -3,7 +3,7 @@
     @content
 
 @include breakpoint(1200px)
-  .casino
+  .sport
     &__row
       gap: 15px
       grid-template-columns: 167px 167px 167px auto
@@ -19,45 +19,8 @@
           font-size: 14px
           padding: 10px 10px 8px
 
-@include breakpoint(1105px)
-  .bonus
-    &__image
-      left: -90px
 
 @include breakpoint(1015px)
-  .bonus
-    padding: 80px 0 0 0
-    &__container
-      padding: 0 75px 0 15px
-    &__image
-      max-width: 290px
-      left: -30px
-      &-buble
-        transform: scale(0.7)
-        top: -64px
-    &__info
-      &-prize
-        font-size: 15px
-        line-height: 20px
-        margin: 0 0 12px 0
-      &-title
-        font-size: 33px
-        line-height: 40px
-        margin: 0 0 12px 0
-      &-list
-        margin: 0 0 25px 0
-      &-item
-        font-size: 12px
-        line-height: 15px
-        &:not(:last-child)
-          margin: 0 13px 0 0
-        img
-          max-width: 23px
-      &-link
-        border-radius: 2px
-        padding: 17px 33px 15px
-        font-size: 14px
-        line-height: 18px
   .choise
     margin-top: -1px
     position: relative
@@ -76,7 +39,7 @@
       &:not(:last-child)
         margin: 0 0 30px 0
 
-  .casino
+  .sport
     padding: 0 0 70px 0
     &__row
       grid-template-columns: 167px 167px auto
@@ -183,20 +146,9 @@
           max-width: 540px
           text-align: center
 
-@include breakpoint(850px)
-  .bonus
-    &__container
-      padding: 0 30px 0 15px
-
-@include breakpoint(730px)
-  .bonus
-    &__container
-      padding: 0 15px
-    &__image
-      left: -80px
 
 @include breakpoint(690px)
-  .casino
+  .sport
     &__row
       grid-template-columns: calc(33% - 5px) calc(33% - 5px) calc(33% - 5px)
       grid-template-rows: auto auto auto
@@ -226,72 +178,10 @@
           grid-row: 3/4
           grid-column: 3/4
 
-
-@include breakpoint(660px)
-  .bonus
-    padding: 25px 0 0 0
-    &__image
-      max-width: 245px
-      position: absolute
-      bottom: 0
-      left: 0
-      &-buble
-        transform: scale(0.65)
-        top: -50px
-        right: -190px
-    &__row
-      justify-content: center
-    &__info
-      &-title
-        margin: 0 0 240px 0
-      &-link
-        padding: 17px 84px 15px
-
-@include breakpoint(510px)
-  .bonus
-    padding: 12px 0 0 0
-    &__row
-      align-items: stretch
-      width: 100%
-    &__image
-      left: -20px
-      &-buble
-        transform: scale(0.6)
-        top: -52px
-        right: -170px
-    &__info
-      align-items: stretch
-      width: 100%
-      &-prize
-        padding: 6px 7px 4px
-        font-size: 12px
-        line-height: 23px
-        margin: 0 0 10px 0
-        align-self: center
-      &-title
-        font-size: 30px
-        line-height: 38px
-        margin: 0 0 220px 0
-      &-list
-        margin: 0 0 23px 0
-      &-item
-        font-size: 15px
-        line-height: 20px
-        &:not(:last-child)
-          margin: 0 15px 0 0
-        img
-          max-width: 30px
-      &-link
-        width: 100%
-        padding: 17px 15px 15px
-        font-size: 16px
-        line-height: 21px
-        text-align: center
-
   .choise
     padding: 0 0 50px 0
 
-  .casino
+  .sport
     padding: 0 0 50px 0
     &__link
       display: none
@@ -349,13 +239,4 @@
           line-height: 15px
 
 
-@include breakpoint(365px)
-  .bonus
-    &__image
-      left: -62px
-    &__info
-      margin: 0 0 15px 0
-      &-item
-        font-size: 13px
-        line-height: 18px
 

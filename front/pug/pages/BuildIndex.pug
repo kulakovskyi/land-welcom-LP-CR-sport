@@ -36,64 +36,80 @@
                 .bonus__row
                     .bonus__image
                         picture
-                            source(media="(min-width: 1025px)" srcset="img/sam-desc.png")
-                            source(media="(min-width: 600px)" srcset="img/sam-tab.png")
-                            source(media="(min-width: 280px)" srcset="img/sam-mob.png")
-                            img(src="img/sam-desc.png" alt="Favbet")
-                        .bonus__image-buble
-                            .bonus__image-buble-text Bună, sunt Koala Sam. Ambasadorul distracției la FAVBET
+                            source(media="(min-width: 1025px)" srcset="img/football-desc.png")
+                            source(media="(min-width: 600px)" srcset="img/football-tab.png")
+                            source(media="(min-width: 280px)" srcset="img/football-mob.png")
+                            img(src="img/football-desc.png" alt="Favbet")
+                        .bonus__image-ball
                     .bonus__info
-                        .bonus__info-prize 1000 RON LA #[span PRIMA DEPUNERE]
-                        .bonus__info-title BONUS #[span 100%] #[br] PÂNĂ LA #[span 1000 LEI]
-                        ul.bonus__info-list
-                            li.bonus__info-item PARIU FĂRĂ #[br] RISC PÂNĂ LA 100 LEI
-                            li.bonus__info-item
-                                img(src='img/plus.svg' alt='plus')
-                            li.bonus__info-item 100 ROTIRI #[br] GRATUITE
+                        .bonus__info-title
+                            .bonus__info-title-top #[span 100%] BONUS
+                            .bonus__info-title-bottom LA PRIMA #[br] DEPUNERE
                         a(href='https://www.favbet.ro/ro/register/?from=header-desktop').bonus__info-link ÎNREGISTRARE
+            .bonus__marquee
+                ul.bonus__marquee-list
+                    li.bonus__marquee-item PARIU FĂRĂ RISC
+                    li.bonus__marquee-item
+                        img(src='img/plus.svg' alt='plus')
+                    li.bonus__marquee-item 100 ROTIRI GRATUITE
+                img(src='img/fav-grey.svg' alt='favbet')
+                ul.bonus__marquee-list
+                    li.bonus__marquee-item PARIU FĂRĂ RISC
+                    li.bonus__marquee-item
+                        img(src='img/plus.svg' alt='plus')
+                    li.bonus__marquee-item 100 ROTIRI GRATUITE
+
+
+                img(src='img/fav-grey.svg' alt='favbet')
+                ul.bonus__marquee-list
+                    li.bonus__marquee-item PARIU FĂRĂ RISC
+                    li.bonus__marquee-item
+                        img(src='img/plus.svg' alt='plus')
+                    li.bonus__marquee-item 100 ROTIRI GRATUITE
+
         section.choise
             .choise__container
                 ul.choise__row
                     li.choise__item
-                        h2.choise__item-title CASINO
-                        p.choise__item-text Cele mai noi jocuri de la cei mai mari provideri din lume
-                        a(href='https://www.favbet.ro/ro/casino/').choise__item-link JOACĂ ACUM!
+                        h2.choise__item-title SPORT
+                        p.choise__item-text Cea mai bogată ofertă de pariere și cele mai multe evenimente
+                        a(href='https://www.favbet.ro/ro/casino/').choise__item-link PARIAZĂ ACUM!
                     li.choise__item
                         h2.choise__item-title BONUS LA PRIMA DEPUNERE
                         p.choise__item-text 100% PÂNĂ LA 1000 LEI LA SPORT & CASINO
-                        a(href='https://www.favbet.ro/ro/casino/').choise__item-link JOACĂ ACUM!
-        section.casino
-            .casino__container
-                ul.casino__row
-                    li.casino__item.casino__item-min
+                        a(href='https://www.favbet.ro/ro/casino/').choise__item-link PARIAZĂ ACUM!
+        section.sport
+            .sport__container
+                ul.sport__row
+                    li.sport__item.sport__item-min
                         a(href='https://www.favbet.ro/ro/casino/')
-                        .casino__item-btn #[span Joacă]
-                        img(src='img/casino/casino-img-1.jpg' alt='image')
-                    li.casino__item.casino__item-min
+                        span Fotbal
+                        img(src='img/sport/sport-img-1.jpg' alt='image')
+                    li.sport__item.sport__item-min
                         a(href='https://www.favbet.ro/ro/casino/')
-                        .casino__item-btn #[span Joacă]
-                        img(src='img/casino/casino-img-2.jpg' alt='image')
-                    li.casino__item.casino__item-min
+                        span E-Sports
+                        img(src='img/sport/sport-img-2.jpg' alt='image')
+                    li.sport__item.sport__item-min
                         a(href='https://www.favbet.ro/ro/casino/')
-                        .casino__item-btn #[span Joacă]
-                        img(src='img/casino/casino-img-3.jpg' alt='image')
-                    li.casino__item.casino__item-min
+                        span PORTSBASCHET
+                        img(src='img/sport/sport-img-3.jpg' alt='image')
+                    li.sport__item.sport__item-min
                         a(href='https://www.favbet.ro/ro/casino/')
-                        .casino__item-btn #[span Joacă]
-                        img(src='img/casino/casino-img-4.jpg' alt='image')
-                    li.casino__item.casino__item-min
+                        span TENIS
+                        img(src='img/sport/sport-img-4.jpg' alt='image')
+                    li.sport__item.sport__item-min
                         a(href='https://www.favbet.ro/ro/casino/')
-                        .casino__item-btn #[span Joacă]
-                        img(src='img/casino/casino-img-5.jpg' alt='image')
-                    li.casino__item.casino__item-min
+                        span VOLEI
+                        img(src='img/sport/sport-img-5.jpg' alt='image')
+                    li.sport__item.sport__item-min
                         a(href='https://www.favbet.ro/ro/casino/')
-                        .casino__item-btn #[span Joacă]
-                        img(src='img/casino/casino-img-6.jpg' alt='image')
-                    li.casino__item.casino__item-big
-                        h2.casino__item-big-title casino
-                        p.casino__item-big-text Trăiește experiența casinoului online de oriunde. Aici găsești mereu tot ce apare nou!
-                        a(href='https://www.favbet.ro/ro/casino/').casino__link JOACĂ ACUM!
-                a(href='https://www.favbet.ro/ro/casino/').casino__link-mob JOACĂ ACUM!
+                        span HOCHEI
+                        img(src='img/sport/sport-img-6.jpg' alt='image')
+                    li.sport__item.sport__item-big
+                        h2.sport__item-big-title Sport
+                        p.sport__item-big-text Fiecare etapă de România 1 îți aduce un BONUS! Pariază minim50 de lei și câștigă un PARIU FĂRĂ RISC!
+                        a(href='https://www.favbet.ro/ro/casino/').sport__link PARIAZĂ ACUM!
+                a(href='https://www.favbet.ro/ro/casino/').sport__link-mob PARIAZĂ ACUM!
     footer.footer
         .footer__container
             .footer__btn-scroll
