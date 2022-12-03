@@ -38,6 +38,8 @@ body
   img
     max-width: 100%
     height: auto
+  &.overflow
+    overflow: hidden
 
 .wrapper
   overflow: hidden
@@ -139,9 +141,9 @@ body
     @include breakpoint(1305px)
       margin: 0 30px 0 0
     @include breakpoint(1260px)
-      flex: 1 1 auto
+      margin: 0 auto 0 0
     @include breakpoint(600px)
-      margin: 0
+      margin: 0 auto 0 0
     img
       @include breakpoint(600px)
         transform: scale(1.2)
@@ -272,9 +274,8 @@ body
       margin: 0 0 60px 0
       &-top
         font-family: $font-wulkan
-        font-size: 74px
-        line-height: 80px
         margin: 0 0 5px 0
+        white-space: nowrap
         span
           font-family: $font-wulkan
           position: relative
@@ -329,10 +330,6 @@ body
     img
       &:not(:last-child)
         margin: 0 28px 0 0
-
-
-
-
 
 
 /*********************************************CHOISE********************************************/
@@ -450,6 +447,8 @@ body
         left: 0
         z-index: 5
       span
+        width: 200px
+        text-align: center
         white-space: nowrap
         position: absolute
         display: inline-block
@@ -596,7 +595,6 @@ body
     padding: 15px 15px
     background: #12056F
     margin: 0 0 40px 0
-
 
     &-list
       display: flex

@@ -10,14 +10,16 @@ btnScrollTop.addEventListener('click', ()=>{
 const iconMenu = document.querySelector(".menu__icon");
 const iconMenuSpan = document.querySelector(".menu__icon > span");
 const menuBody = document.querySelector(".header__nav");
+const body = document.querySelector('body');
+
 
 iconMenu.addEventListener("click", function (e) {
     iconMenu.classList.toggle("_active");
     menuBody.classList.toggle("_active");
+    body.classList.toggle('overflow')
 });
 
 //footer menu
-console.log(window.innerWidth)
 if(window.innerWidth <= 960){
     const footerItemTitle = document.querySelectorAll('.footer__item');
     footerItemTitle.forEach(item=>{

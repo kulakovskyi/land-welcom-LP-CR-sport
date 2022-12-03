@@ -6,12 +6,17 @@
   .sport
     &__row
       gap: 15px
-      grid-template-columns: 167px 167px 167px auto
+      grid-template-columns: auto 167px 167px 167px
       grid-template-rows: 167px 167px
     &__item
       &-min
         width: 167px
         height: 167px
+        span
+          font-size: 14px
+          padding: 15px 14px 13px
+          width: 148px
+          text-align: center
       &-big
         background-size: 63%
       &-btn
@@ -19,6 +24,22 @@
           font-size: 14px
           padding: 10px 10px 8px
 
+@include breakpoint(1115px)
+  .bonus
+    &__info
+      &-title
+        font-size: 61px
+        line-height: 67px
+        &-top
+          span
+            &::before
+              width: 173px
+              left: -20px
+              height: 32px
+    &__image
+      max-width: 500px
+      &-ball
+        top: -32px
 
 @include breakpoint(1015px)
   .choise
@@ -26,6 +47,50 @@
     position: relative
 
 @include breakpoint(960px)
+  .bonus
+    &__image
+      max-width: 345px
+      margin: 0 100px 0 0
+      &-ball
+        width: 70px
+        top: -6px
+        left: 55px
+        &::before
+          content: none
+    &__row
+      justify-content: center
+    &__info
+      &-title
+        font-size: 43px
+        line-height: 46px
+        margin: 0 0 30px 0
+        &-top
+          span
+            &::before
+              width: 120px
+              left: -12px
+              height: 24px
+      &-link
+        padding: 18px 30px 16px
+        font-size: 17px
+        line-height: 22px
+    &__marquee
+      padding: 16px 15px 14px
+      &-item
+        font-size: 18px
+        line-height: 17px
+        img
+          min-width: 24px
+          max-width: 24px
+          margin: 0 10px
+      &-list
+        &:not(:last-child)
+          margin: 0 15px 0 0
+      img
+        max-width: 24px
+        &:not(:last-child)
+          margin: 0 15px 0 0
+
   .choise
     padding: 0 0 60px 0
     &__row
@@ -42,7 +107,7 @@
   .sport
     padding: 0 0 70px 0
     &__row
-      grid-template-columns: 167px 167px auto
+      grid-template-columns: auto 167px 167px
       grid-template-rows: 167px 167px 167px
       gap: 10px
     &__item
@@ -51,25 +116,25 @@
         height: 100%
         &:nth-child(1)
           grid-row: 1/2
-          grid-column: 1/2
+          grid-column: 2/3
         &:nth-child(2)
           grid-row: 1/2
-          grid-column: 2/3
+          grid-column: 3/4
         &:nth-child(3)
           grid-row: 2/3
-          grid-column: 1/2
+          grid-column: 2/3
         &:nth-child(4)
           grid-row: 2/3
-          grid-column: 2/3
+          grid-column: 3/4
         &:nth-child(5)
           grid-row: 3/4
-          grid-column: 1/2
+          grid-column: 2/3
         &:nth-child(6)
           grid-row: 3/4
-          grid-column: 2/3
+          grid-column: 3/4
       &-big
         grid-row: 1/4
-        grid-column: 3/4
+        grid-column: 1/2
         background-size: 91%
 
   .footer
@@ -146,6 +211,14 @@
           max-width: 540px
           text-align: center
 
+@include breakpoint(750px)
+  .bonus
+    &__container
+      padding: 0 30px 0 15px
+    &__row
+      justify-content: space-between
+    &__image
+      margin: 0 50px 0 0
 
 @include breakpoint(690px)
   .sport
@@ -238,5 +311,103 @@
           font-size: 12px
           line-height: 15px
 
+
+
+@include breakpoint(640px)
+  .bonus
+    padding: 0
+    margin-top: -50px
+    &__container
+      padding: 0 15px 0 0
+    &__row
+      flex-direction: column
+      align-items: stretch
+      margin: 0 0 30px 0
+    &__image
+      max-width: 100%
+      width: 110%
+      margin: 0
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 100px
+        background: linear-gradient(180deg, rgba(0, 0, 85, 0) 0%, #000055 100%)
+        z-index: 6
+      &-ball
+        background: none
+        display: none
+    &__info
+      margin-top: -45px
+      position: relative
+      z-index: 7
+      &-title
+        margin: 0 0 12px 15px
+        &-top
+          font-size: 50px
+          line-height: 65px
+          span
+            &::before
+              width: 137px
+              left: -12px
+              height: 28px
+        &-bottom
+          font-size: 24px
+          line-height: 30px
+          br
+            display: none
+      &-link
+        padding: 18px 15px 16px
+        font-size: 16px
+        line-height: 21px
+        width: 100%
+        text-align: center
+        border-radius: 4px
+        margin: 0 0 0 15px
+    &__marquee
+      width: 100%
+      padding: 16px 0 14px
+      img
+        display: none
+      &-item
+        font-size: 23px
+        line-height: 34px
+        max-width: 165px
+        text-align: center
+        white-space: normal
+      &-list
+        margin: 0 !important
+        &:nth-of-type(1),
+        &:nth-of-type(2)
+          display: none
+        &:nth-of-type(3)
+          justify-content: center
+          img
+            display: block
+            max-width: 30px
+            margin: 0
+
+@include breakpoint(365px)
+  .bonus
+    &__marquee
+      &-item
+        width: 100px
+        display: flex
+        align-items: center
+        justify-content: center
+        font-size: 18px
+        line-height: 26px
+        img
+          margin: 0 8px !important
+
+  .sport
+    &__item
+      &-min
+        span
+          font-size: 12px
+          width: 120px
 
 
